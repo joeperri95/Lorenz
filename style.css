@@ -1,0 +1,8 @@
+
+#info {
+    white-space: nowrap;
+}
+
+#info * {
+    display: inline;
+}
