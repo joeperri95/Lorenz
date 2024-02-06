@@ -14,6 +14,8 @@ wasm-bindgen = "0.2.84"
 gloo = "0.8.0"
 nalgebra = "*"
 console_error_panic_hook = { version = "0.1.1", optional = false } 
+rand = "0.8.5"
+getrandom = { version = "0.2", features = ["js"]}
 
 [dependencies.web-sys]
 version = "0.3.4"
@@ -24,7 +26,9 @@ features = [
   'WebGlBuffer',
   'WebGlVertexArrayObject',
   'WebGl2RenderingContext',
+  'WebGlUniformLocation',
   'WebGlProgram',
   'WebGlShader',
   'Window',
+  'KeyboardEvent',
 ]
