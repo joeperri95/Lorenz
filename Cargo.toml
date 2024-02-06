@@ -23,6 +23,7 @@ features = [
   'Document',
   'Element',
   'HtmlCanvasElement',
+  'HtmlButtonElement',
   'WebGlBuffer',
   'WebGlVertexArrayObject',
   'WebGl2RenderingContext',
@@ -31,4 +32,6 @@ features = [
   'WebGlShader',
   'Window',
   'KeyboardEvent',
+  'InputEvent',
+  'MouseEvent',
 ]
