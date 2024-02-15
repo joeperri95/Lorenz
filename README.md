@@ -1,5 +1,9 @@
-# Vector field visualizer
+# Lorenz 
 
-This project will be used to visualize a vector field and simulate motion through it.
+A first person interactive visualization of a Lorenz system. \
+Created using rust, wasm-bindgen, and webgl.
 
-rust, wasm, webgl
+## Controls
+Click on the canvas to enable mouse camera control. \
+Use WASD to move. Shift/Control to increase/decrease position on the y plane. \
+Spacebar can be used to pause/resume the animation.

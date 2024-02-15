@@ -1,14 +1,26 @@
+<!DOCTYPE html>
 <html>
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <script type="module">
+        import initSync, {start} from './pkg/lorenz.js'
+        initSync();
+    </script>
   </head>
   <body>
+    <h1>Strange...</h1>
     <canvas id="canvas" height="600" width="600"></canvas>
       <div id="controls">
+          <button id = "pause-button" class="button btn">pause</button>
           <button id = "restart-button" class="button btn" onClick="window.location.reload();">restart</button>
-          <input id = "rho-slider" type="range" min="0.1" max="100.0" class="slider">rho</input>
-          <input id = "beta-slider" type="range" min="0.1" max="100.0" class="slider">beta</input>
-          <input id = "sigma-slider" type="range" min="0.1" max="100.0" class="slider">sigma</input>
+          <input id = "rho-slider" name = "rho-slider" type="range" step="0.1" min="0.1" max="100.0" value="28.0" class="slider"/>
+          <label id = "rho-slider-label" for="rho-slider">rho = 28.0</label>
+          <input id = "beta-slider" name = "beta-slider" type="range" step="0.1" min="0.1" max="100.0" value="2.66666666" class="slider"\>
+          <label id = "beta-slider-label" for="beta-slider">beta = 2.66666</label>
+          <input id = "sigma-slider" name = "sigma-slider" type="range" step="0.1" min="0.1" max="100.0" value="10.0" class="slider"\>
+          <label id = "sigma-slider-label" for="sigma-slider">sigma = 10.0</label>
       </div>
+      <br/>
+      <a href="https://github.com/joeperri95/Lorenz">Github</a>
   </body>
 </html>
