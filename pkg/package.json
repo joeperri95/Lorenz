@@ -1,0 +1,17 @@
+{
+  "name": "lorenz",
+  "collaborators": [
+    "joeperri95"
+  ],
+  "version": "0.1.0",
+  "files": [
+    "lorenz_bg.wasm",
+    "lorenz.js",
+    "lorenz.d.ts"
+  ],
+  "module": "lorenz.js",
+  "types": "lorenz.d.ts",
+  "sideEffects": [
+    "./snippets/*"
+  ]
+}
